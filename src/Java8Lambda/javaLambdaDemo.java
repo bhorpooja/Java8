@@ -6,7 +6,7 @@ package Java8Lambda;
 interface Test{
     void run();
 }
-class TestAnonym {
+public class javaLambdaDemo {
 
     public static void main(String[] args) {
         System.out.println("Use interface using anonymous inner class");
@@ -32,6 +32,4 @@ class TestAnonym {
 
 }
 
-public class javaLambdaDemo {
-    TestAnonym t=new TestAnonym();
-}
+
