@@ -6,9 +6,10 @@ package Java8Lambda;
 interface Test{
     void run();
 }
-public class javaLambdaDemo {
+class javaLambdaDemo {
 
     public static void main(String[] args) {
+        System.out.println("Interface with no param to method");
         System.out.println("Use interface using anonymous inner class");
         Test t = new Test() {
 
