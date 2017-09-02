@@ -59,12 +59,27 @@ class Demo {
         list2.sort((o1, o2) -> o1.getAge()-o2.getAge());
         System.out.println(list2);
     }
-}
+
+    void javaFor(){
+        List<Student> list2=get();
+        System.out.println("print list using forEach loop");
+        System.out.println(list2);
+        for (Student s:list2) {
+            System.out.println(s.getId() + " " + s.getName() + "  " + s.getAge() + " " + s.getClg());
+        }
+        System.out.println("print list using lambda exp");
+        list2.forEach(s -> System.out.println(s));
+       list2.forEach(s -> System.out.println(s.getId()+" "+s.getName()+" "+s.getAge()+" "+s.getClg()));
+
+        }
+    }
+
 public class ComparatroDemo {
     public static void main(String[] args) {
         Demo d=new Demo();
        //d.check();
-       d.check1();
+       //d.check1();
+       d.javaFor();
 
     }
 }

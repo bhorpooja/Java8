@@ -1,18 +1,20 @@
 package Java8Lambda;
 
+import static sun.misc.PostVMInitHook.run;
+
 /**
  * Created by pooja on 1/9/17.
  */
 interface Test{
     void run();
+    //String disp(String nm);
 }
-class javaLambdaDemo {
+abstract class javaLambdaDemo implements Test{
 
     public static void main(String[] args) {
-        System.out.println("Interface with no param to method");
-        System.out.println("Use interface using anonymous inner class");
+        //Interface with no param to method"
+        //Use interface using anonymous inner class
         Test t = new Test() {
-
             @Override
             public void run()
             {
@@ -21,12 +23,13 @@ class javaLambdaDemo {
         };
         t.run();
 
+        //override interface method using java8 lambda exp
         Test t1=()->{
-            System.out.println("Interface run method using lambda exp. 1way");
+            System.out.println("Interface run method using lambda exp. 1st way");
         };
         t1.run();
 
-        Test t2=()-> System.out.println("Interface run method using lambda exp. 2way");
+        Test t2=()-> System.out.println("Interface run method using lambda exp. 2nd way");
         t2.run();
 
     }
