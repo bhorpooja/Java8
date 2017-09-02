@@ -63,17 +63,16 @@ class MapDemo{
         Map<String,List<Student>> map=new HashMap<>();
         map.put("abc",list1);
         //iterate map of list of object sing Map.Entry Interface
-        for (Map.Entry<String,List<Student>> e:map.entrySet()){
-            List<Student> ss=e.getValue();
-            for (Student s:ss){
-                System.out.println(e.getKey()+" "+s.getId()+" "+s.getName()+" "+s.getAge()+" "+s.getClg());
-            }
-        }
+//        for (Map.Entry<String,List<Student>> e:map.entrySet()){
+//            List<Student> ss=e.getValue();
+//            for (Student s:ss){
+//                System.out.println(e.getKey()+" "+s.getId()+" "+s.getName()+" "+s.getAge()+" "+s.getClg());
+//            }
+//        }
 
         //iterating map of list of object using lambda exp.
-        map.forEach((String k, List<Student> stud) -> {
-            List<Student> s = stud;
-            s.forEach(ss -> System.out.println(k+" "+ss.getId()+" "+ss.getName()+" "+ss.getAge()+" "+ss.getClg()));
+        map.forEach(( k,list ) -> {
+            list.forEach(ss -> System.out.println(k+" "+ss.getId()+" "+ss.getName()+" "+ss.getAge()+" "+ss.getClg()));
         });
     }
 }
