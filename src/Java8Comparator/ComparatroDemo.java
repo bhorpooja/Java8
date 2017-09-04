@@ -77,9 +77,9 @@ class Demo {
 public class ComparatroDemo {
     public static void main(String[] args) {
         Demo d=new Demo();
-       //d.check();
+       d.check();
        //d.check1();
-       d.javaFor();
+       //d.javaFor();
 
     }
 }

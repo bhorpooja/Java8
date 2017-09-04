@@ -10,6 +10,28 @@ import java.util.function.Consumer;
  * Created by pooja on 2/9/17.
  */
 class ListDemo{
+
+    void getList(){
+        List<String> list=new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+        System.out.println(list);
+        //iterate list to get specified element based on condition using forEach
+//        for(String s:list){
+//            System.out.println(s);
+//            if ("C".equals(s)){
+//                System.out.println("True");
+//            }
+//        }
+        //iterate list to get specified element based on condition using lambda exp
+        list.forEach(s ->{System.out.println(s);
+        if("c".equalsIgnoreCase(s))
+            System.out.println("True");});
+
+    }
     Map<String,Student> getMap(){
         Map<String,Student> map=new HashMap<>();
         Student s1=new Student();
@@ -56,6 +78,7 @@ class ListDemo{
 public class java8ListDemo {
     public static void main(String[] args) {
        ListDemo l=new ListDemo();
-        l.printMap();
+       l.getList();
+        //l.printMap();
     }
 }
