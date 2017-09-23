@@ -1,13 +1,10 @@
-package Java8Lambda;
-
-import static sun.misc.PostVMInitHook.run;
+package com.example.Java8Lambda;
 
 /**
  * Created by pooja on 1/9/17.
  */
 interface Test{
     void run();
-    //String disp(String nm);
 }
 abstract class javaLambdaDemo implements Test{
 

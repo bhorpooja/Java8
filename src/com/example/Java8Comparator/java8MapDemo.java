@@ -1,4 +1,4 @@
-package Java8Comparator;
+package com.example.Java8Comparator;
 
 import java.util.ArrayList;
 import java.util.HashMap;

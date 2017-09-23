@@ -1,4 +1,4 @@
-package Java8Lambda;
+package com.example.Java8Lambda;
 
 /**
  * Created by pooja on 1/9/17.

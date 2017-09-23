@@ -1,10 +1,9 @@
-package Java8Comparator;
+package com.example.Java8Comparator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Consumer;
 
 /**
  * Created by pooja on 2/9/17.
