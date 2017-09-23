@@ -4,10 +4,10 @@ package com.example.Java8MethodReference.ConstructorReference;
  * Created by pooja on 23/9/17.
  */
 interface Massageable{
-    public  void getMsg(String msg);
+    public void getMsg(String msg);
 }
 class Message{
-    public Message  (String msg){
+    public Message(String msg){
         System.out.println(msg);
     }
 }
