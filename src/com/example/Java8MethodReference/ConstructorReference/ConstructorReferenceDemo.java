@@ -3,7 +3,7 @@ package com.example.Java8MethodReference.ConstructorReference;
 /**
  * Created by pooja on 23/9/17.
  */
-interface Massageable{
+interface Messageable{
     public void getMsg(String msg);
 }
 class Message{
@@ -17,7 +17,7 @@ public class ConstructorReferenceDemo {
      //Here, we are referring constructor with the help of functional interface.
 
     public static void main(String[] args) {
-        Massageable m=Message::new;
+        Messageable m=Message::new;
         m.getMsg("Hey....Hiiii....");
     }
 }
